@@ -1,5 +1,5 @@
 # ==========================================
-# IPv6 MLDv2 Multicast Test
+# IPv6 MLDv2 Multicast Generator
 # ==========================================
 
 $group = [System.Net.IPAddress]::Parse("ff02::1234")
@@ -21,7 +21,7 @@ if ($interfaces.Count -eq 0) {
 
 Write-Host ""
 Write-Host "========================================"
-Write-Host " IPv6 MLDv2 Multicast Test"
+Write-Host "IPv6 MLDv2 Multicast Generator"
 Write-Host "========================================"
 Write-Host ""
 Write-Host "Available IPv6 interfaces:"
@@ -81,7 +81,7 @@ while ($true) {
 
 Write-Host ""
 Write-Host "========================================"
-Write-Host " Test started"
+Write-Host "IPv6 MLDv2 Multicast Generator started"
 Write-Host "========================================"
 Write-Host ("Interface : {0}" -f $interfaceName)
 Write-Host ("ifIndex   : {0}" -f $if)
