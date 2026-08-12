@@ -10,7 +10,7 @@ if %errorlevel% neq 0 (
 )
 
 echo ========================================
-echo        IPv4 ARP Generator
+echo        IPv4 ARP Generator Started
 echo ========================================
 echo.
 
