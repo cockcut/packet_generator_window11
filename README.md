@@ -69,3 +69,49 @@ MLD Join  #3
 MLD Leave #3
 MLD Join  #4
 
+# ipv4_ipv6_mdns-generator.bat ipv4_ipv6_mdns-generator.ps1
+
+1) 패킷 송신할 인터페이스 선택
+========================================
+ IPv4 / IPv6 mDNS Generator
+========================================
+
+Available interfaces:
+
+[21] 이더넷 2
+
+Enter interface index:
+
+2) 송신 간격 지정
+Selected interface:
+  Name      : 이더넷 2
+  ifIndex   : 21
+  IPv4      : 172.16.0.4
+  IPv6      : fe80::56fd:6150:e6eb:6cb9
+
+Enter interval in milliseconds:
+
+3) 테스트 시작
+4) 
+========================================
+ mDNS Generator Started
+========================================
+Interface : 이더넷 2
+IPv4      : 172.16.0.4
+IPv6      : fe80::56fd:6150:e6eb:6cb9
+
+IPv4 : 172.16.0.4 -> 224.0.0.251:5353
+IPv6 : fe80::56fd:6150:e6eb:6cb9 -> ff02::fb:5353
+
+Interval : 100 ms
+
+Press Ctrl+C to stop.
+
+Sent #1  IPv4=172.16.0.4  IPv6=fe80::56fd:6150:e6eb:6cb9
+Sent #2  IPv4=172.16.0.4  IPv6=fe80::56fd:6150:e6eb:6cb9
+Sent #3  IPv4=172.16.0.4  IPv6=fe80::56fd:6150:e6eb:6cb9
+Sent #4  IPv4=172.16.0.4  IPv6=fe80::56fd:6150:e6eb:6cb9
+Sent #5  IPv4=172.16.0.4  IPv6=fe80::56fd:6150:e6eb:6cb9
+Sent #6  IPv4=172.16.0.4  IPv6=fe80::56fd:6150:e6eb:6cb9
+Sent #7  IPv4=172.16.0.4  IPv6=fe80::56fd:6150:e6eb:6cb9
+Sent #8  IPv4=172.16.0.4  IPv6=fe80::56fd:6150:e6eb:6cb9
