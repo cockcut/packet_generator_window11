@@ -9,6 +9,6 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0ipv6-multicast.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0ipv4_ipv6_mdns-generator.ps1"
 
 pause
