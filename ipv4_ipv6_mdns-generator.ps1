@@ -211,12 +211,22 @@ $udp6.Client.SetSocketOption(
     255
 )
 
-$endpoint6 = New-Object System.Net.IPEndPoint(
-    [System.Net.IPAddress]::Parse("ff02::fb"),
-    5353
+# ==========================================
+# IPv6 Endpoint
+# ==========================================
+
+$multicast6 = [System.Net.IPAddress]::Parse("ff02::fb")
+
+# Add IPv6 interface scope
+$multicast6 = New-Object System.Net.IPAddress(
+    $multicast6.GetAddressBytes(),
+    [int64]$ifIndex
 )
 
-$endpoint6.ScopeId = $ifIndex
+$endpoint6 = New-Object System.Net.IPEndPoint(
+    $multicast6,
+    5353
+)
 
 # ==========================================
 # Start
