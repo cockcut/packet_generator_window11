@@ -2,15 +2,21 @@
 
 아래 bat,ps1파일을 동일 폴더에 넣은 다음 bat를 실행.
 
+
+########################################################################
+ARP generator
+########################################################################
 # arp-generator.bat arp-generator.ps1 -> Npcap를 이용하므로 설치 필요.
 <사용예시>
 
-0) npcap 파일 설치 확인
+0) arp-generator.bat 실행
+
+1) npcap 파일 설치 확인
 
 Npcap:
   DLL : C:\WINDOWS\System32\Npcap\wpcap.dll
 
-1) 패킷 송신할 인터페이스 선택
+2) 패킷 송신할 인터페이스 선택
 ========================================
  Raw Ethernet ARP Generator
 ========================================
@@ -21,21 +27,20 @@ Available interfaces:
 
 Enter interface index:
 
-2) ARP request 보낼 IP 지정
+3) ARP request 보낼 IP 지정
 
 Enter target IPv4 address:
 
-2) 송신 간격 지정
+4) 송신 간격 지정
 Enter interval in milliseconds:
 
-3) 소스 맥 선택(랜덤맥주소 / 리얼맥주소)
+5) 소스 맥 선택(랜덤맥주소 / 리얼맥주소)
 
 Source MAC mode:
 [1] Random MAC for every packet
 [2] Actual interface MAC
 
-
-3) 테스트 시작
+6) 테스트 시작
 ========================================
  ARP Generator Started
 ========================================
@@ -45,7 +50,7 @@ IPv4      : 172.16.0.4
 Target    : 172.16.0.1
 Interval  : 100 ms
 
-MAC       : BC-24-11-81-9A-07
+MAC       : aa-bb-cc-66-55-44
 
 ARP Request:
 172.16.0.4 -> 172.16.0.1
@@ -55,8 +60,14 @@ Press Ctrl+C to stop.
 172.16.0.4 -> ARP -> 172.16.0.1
 172.16.0.4 -> ARP -> 172.16.0.1
 
+
+########################################################################
+ipv6-multicast generator
+########################################################################
 # ipv6-multicast.bat ipv6-multicast.ps1
 <사용예시>
+0) ipv6-multicast.bat
+
 1) 패킷 송신할 인터페이스 선택
 ========================================
  IPv6 MLDv2 Multicast Test
@@ -96,7 +107,12 @@ MLD Join  #3
 MLD Leave #3
 MLD Join  #4
 
+########################################################################
+ipv4_ipv6_mdns-generator
+########################################################################
 # ipv4_ipv6_mdns-generator.bat ipv4_ipv6_mdns-generator.ps1
+
+0) ipv4_ipv6_mdns-generator.bat
 
 1) 패킷 송신할 인터페이스 선택
 ========================================
