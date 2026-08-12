@@ -83,6 +83,7 @@ Write-Host ""
 Write-Host "========================================"
 Write-Host "IPv6 MLDv2 Multicast Generator started"
 Write-Host "========================================"
+Write-Host ""
 Write-Host ("Interface : {0}" -f $interfaceName)
 Write-Host ("ifIndex   : {0}" -f $if)
 Write-Host ("Group     : ff02::1234")
