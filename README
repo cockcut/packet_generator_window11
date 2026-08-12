@@ -2,34 +2,58 @@
 
 아래 bat,ps1파일을 동일 폴더에 넣은 다음 bat를 실행.
 
-# arp-generator.bat arp-generator.ps1
+# arp-generator.bat arp-generator.ps1 -> Npcap를 이용하므로 설치 필요.
 <사용예시>
-1) ARP request할 IP 지정
+
+0) npcap 파일 설치 확인
+
+Npcap:
+  DLL : C:\WINDOWS\System32\Npcap\wpcap.dll
+
+1) 패킷 송신할 인터페이스 선택
 ========================================
-       IPv4 ARP Generator
+ Raw Ethernet ARP Generator
 ========================================
 
-Target IP:
+Available interfaces:
+
+[21] 이더넷 2
+
+Enter interface index:
+
+2) ARP request 보낼 IP 지정
+
+Enter target IPv4 address:
 
 2) 송신 간격 지정
-Interval (ms):
+Enter interval in milliseconds:
+
+3) 소스 맥 선택(랜덤맥주소 / 리얼맥주소)
+
+Source MAC mode:
+[1] Random MAC for every packet
+[2] Actual interface MAC
+
 
 3) 테스트 시작
 ========================================
-       IPv4 ARP Generator Started
+ ARP Generator Started
 ========================================
-Target IP : 172.16.0.99
+Interface : 이더넷 2
+ifIndex   : 21
+IPv4      : 172.16.0.4
+Target    : 172.16.0.1
 Interval  : 100 ms
+
+MAC       : BC-24-11-81-9A-07
+
+ARP Request:
+172.16.0.4 -> 172.16.0.1
 
 Press Ctrl+C to stop.
 
-ARP -> 172.16.0.99
-ARP -> 172.16.0.99
-ARP -> 172.16.0.99
-ARP -> 172.16.0.99
-ARP -> 172.16.0.99
-ARP -> 172.16.0.99
-
+172.16.0.4 -> ARP -> 172.16.0.1
+172.16.0.4 -> ARP -> 172.16.0.1
 
 # ipv6-multicast.bat ipv6-multicast.ps1
 <사용예시>
