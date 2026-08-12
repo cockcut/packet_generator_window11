@@ -92,7 +92,7 @@ Selected interface:
 Enter interval in milliseconds:
 
 3) 테스트 시작
-4) 
+
 ========================================
  mDNS Generator Started
 ========================================
